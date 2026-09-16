@@ -1,0 +1,137 @@
+
+Console.WriteLine( "Bem vindo.Digite sua idade.");
+ int idade;
+  idade = int.Parse(Console.ReadLine()); 
+
+ if (idade >= 18 && idade <99 ) { Console.WriteLine("Acesso permitido sua idade é "+idade); }
+  
+  else { Console.WriteLine("Infelizmente você não pode continuar."); return; }
+
+Console.WriteLine("Você possui carteira de habilitação (sim)/(nao) ? ");
+string carteira = Console.ReadLine();
+
+if (carteira == "sim")
+{ Console.WriteLine("Bem vindo a volta rapida "); }
+else 
+{ Console.WriteLine("Ficou para proxima, muito obrigado"); }
+Console.WriteLine("Programa finalizado.");
+Environment.Exit(0); 
+
+
+
+
+Console.WriteLine("Bem vindo ao Compra certa.");
+Console.WriteLine("Digite seu nome ");
+string nome = Console.ReadLine();
+
+Console.WriteLine(" Agora "+nome+" Você possui algum valor acima de R$30000.00 ? Digite o valor exato");
+int valor;
+valor = int.Parse(Console.ReadLine());
+if (valor >= 30000.00)
+{
+    Console.WriteLine("Parabéns "+nome+" Você esta dentro dos nossos parametros para continuar. ");
+}
+else { Console.WriteLine("Infelizmente Sr(a) "+nome+" você não esta dentro dos nossos parametros."); return; }
+Console.WriteLine("Programa finalizado.");
+Environment.Exit(0); 
+
+
+
+
+
+Console.WriteLine("Bem vindo, digite seu nome para continuar");
+string nome = Console.ReadLine();
+Console.WriteLine("Digite sua idade agora");
+int idade; 
+idade= int.Parse(Console.ReadLine());
+if (idade >= 21) { Console.WriteLine(""); }
+else { Console.WriteLine("Infelizmente você não foi selecionado.");return; 
+}
+
+Console.WriteLine(nome + " Você e formado no ensino superior ? (Sim)/(Não)");
+string positivo = Console.ReadLine();
+
+if (positivo == "sim" || positivo == "Sim") { Console.WriteLine("Seja bem vindo(a) " + nome + " você e 10"); }
+
+else {Console.WriteLine("Você nao foi selecionado, tente na proxima vez. "); return;}
+Console.WriteLine("Programa finalizado.");
+Environment.Exit(0); 
+
+
+Console.WriteLine("Digite seu nome para continuar.");
+string nome = Console.ReadLine();
+Console.WriteLine("Você e assinante do GatoFlix? ");
+string verdadeiro = Console.ReadLine();
+if
+(verdadeiro == "sim" || verdadeiro =="Sim"){ Console.WriteLine("Você assiste alguma serie no GatoFlix ? "); }
+
+else { Console.WriteLine("Obrigado por sua participação"); }
+
+Console.WriteLine("Digite a sua serie favorita");
+string serie = Console.ReadLine();
+Console.WriteLine("Sua serie " + serie + " já tem uma nova temporada aproveite");
+
+
+Console.WriteLine("Digite seu nome para continuar.");
+string nome = Console.ReadLine();
+Console.WriteLine("Você e assinante do GatoFlix "+nome+" ?");
+string verdadeiro = Console.ReadLine();
+if
+(verdadeiro == "sim" || verdadeiro == "Sim") { Console.WriteLine("Você assiste alguma serie no GatoFlix "+nome+ " ?");
+    Console.WriteLine("Digite a sua serie favorita");
+    string serie = Console.ReadLine();
+
+    Console.WriteLine(" A " +serie+ "," +nome + " já tem uma nova temporada aproveite.");
+}
+
+else { Console.WriteLine("Obrigado por sua participação"); return; }
+
+
+console.WriteLine("Bem vindo sr(a) Robô");
+Console.WriteLine("Você se considera um robô ? (Sim)/ (Não)");
+string robo = Console.ReadLine();
+if
+    (robo == "sim" || robo == "Sim" || robo == "SIM") { Console.WriteLine("Sabia você nunca me enganou, morra ......."); }
+else { Console.WriteLine("Não sei se posso confiar.... porem acesso liberado."); }
+
+
+
+
+
+
+Console.WriteLine("Digite um numero");
+int num;
+num = int.Parse(Console.ReadLine());
+
+if
+    (num == 0) { Console.WriteLine("Seu numero e = " + num);return; }
+else { Console.WriteLine("Seu numero e diferente de 0, seu numero e " + num); return; }*/
+
+/*Console.WriteLine("Você é um membro inativo do clube? (Sim/Não)");
+string resposta = Console.ReadLine();
+
+if (resposta == "Não" || resposta == "não")
+{
+    Console.WriteLine("Por favor, atualize sua inscrição para continuar usufruindo dos benefícios do clube");
+}
+else { Console.WriteLine("Bem vindo de volta");}
+
+
+Console.WriteLine("Digite uma palavra:");
+string palavra = Console.ReadLine();
+
+if (!string.IsNullOrEmpty(palavra))
+{
+    Console.WriteLine("A palavra não é vazia");
+}
+
+
+Console.WriteLine("Você não deseja cancelar a operação? (Sim/Não)");
+string resposta = Console.ReadLine();
+
+if (resposta == "Não" || resposta == "não")
+{
+    Console.WriteLine("Por favor, confirme o cancelamento da operação");
+
+}
+else { Console.WriteLine("Vamos seguir em frente ..."); }
